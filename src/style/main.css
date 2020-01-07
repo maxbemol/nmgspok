@@ -1,0 +1,17 @@
+/*
+main.css
+----------------
+Par MaX
+*/
+
+/*
+a, b   = 2 balises
+.class   = peut être utilisé plusieurs fois
+#id   = utilisé juste une fois
+*   = universel, TOUTE
+a b   = b dans a
+a + b   = le premier b dans a
+a[attribut]   = a qui possède un attribut
+a[attribut="valeur"]   = a qui possède l'attribut d'une valeur précise
+a[attribut*="valeur"]   = a qui possède un attribut qui contient la valeur
+*/

@@ -5,6 +5,7 @@ Par MaX
 */
 
 /*
+-----------------------------------------------------------------------------------------
 a, b   = 2 balises
 .class   = peut être utilisé plusieurs fois
 #id   = utilisé juste une fois
@@ -14,4 +15,196 @@ a + b   = le premier b dans a
 a[attribut]   = a qui possède un attribut
 a[attribut="valeur"]   = a qui possède l'attribut d'une valeur précise
 a[attribut*="valeur"]   = a qui possède un attribut qui contient la valeur
+-----------------------------------------------------------------------------------------
 */
+
+/*
+-----------------------------------------------------------------------------------------
+CRÉATION DE POLICE PERSO
+-----------------------------------------------------------------------------------------
+*/
+
+@font-face {
+    font-family: 'MaSuperPolice';
+    src: url('MaSuperPolice.eot') format('eot'),
+         url('MaSuperPolice.woff') format('woff'),
+         url('MaSuperPolice.ttf') format('truetype'),
+         url('MaSuperPolice.svg') format('svg');
+}
+
+/*
+-----------------------------------------------------------------------------------------
+FORMATAGE DE TEXTE
+-----------------------------------------------------------------------------------------
+*/
+
+taille de texte
+{
+	font-size: 16px;
+	font-size: medium;
+	font-size: 1em;
+}
+
+police
+{
+	font-family: police1, "police en deux mot", police3;
+}
+
+style
+{
+	font-style: normal;
+	font-style: italic;
+	font-weight: normal;
+	font-weight: bold;
+	text-decoration: none;
+	text-decoration: underline;
+	text-decoration: line-through;
+	text-decoration: overline;
+	text-decoration: blink;
+}
+
+alignement
+{
+	text-align: center;
+	text-align: left;
+	text-align: right;
+	text-align: justify;
+}
+
+image flottante
+{
+	float: right;
+	float: left;
+	clear: both;
+}
+
+/*
+-----------------------------------------------------------------------------------------
+COULEUR ET FOND
+-----------------------------------------------------------------------------------------
+*/
+
+couleur de texte
+{
+	color: #FFFFFF;
+}
+
+couleur de fond
+{
+	background-color: #000000;
+}
+
+image de fond
+{
+	background-image: url("image.jpg");
+}
+
+option pour image de fond
+{
+	background-attachment: fixed;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-repeat: repeat-x;
+	background-repeat: repeat-y;
+	background-repeat: repeat; /*en mosaique*/
+	background-position: 30px 50px;
+	background-position: top bottom left center right;
+}
+
+transparence
+{
+	opacity: 0.5; /* 1 = 100%     0.1 = 10% */
+}
+
+/*
+-----------------------------------------------------------------------------------------
+BORDURE ET OMBRE
+-----------------------------------------------------------------------------------------
+*/
+
+/* largeur en px, couleur, style */
+
+/*
+-none = pas de bordure
+-solid = simple
+-dotted = pointillé
+-dashed = tiret
+-double = double
+-groove = en relief
+-ridged = autre effet relief
+-inset = effet 3D enfoncé
+-outset = effet 3D surélevé
+*/
+
+/*
+-border-top
+-border-bottom
+-border-left
+-border-right
+*/
+
+exemple
+{
+	border: 2px blue dashed;
+	border-top: 3px #000000 solid;
+}
+
+arrondie simple
+{
+	border-radius: 10px;
+}
+
+arrondie 4 differents, HG-HD-BD-BG
+{
+	border-radius: 2px 10px 2px 10px;
+}
+
+arrondie 2 radius dans le même
+{
+	border-radius: 10px / 20px;
+}
+
+/*
+OMBRE: ordre des valeur
+-décalage horizontal
+-décalage vertical
+-adoucissement
+-couleur
+***ajouter inset pour mettre l'ombre à l'intérieur***
+*/
+
+ombre de boite
+{
+	box-shadow: 6px 6px 2px black;
+}
+
+ombre de texte
+{
+	text-shadow: 6px 6px 2px black;
+}
+
+/*
+-----------------------------------------------------------------------------------------
+APPARENCE DYNAMIQUE
+-----------------------------------------------------------------------------------------
+*/
+
+balise:hover
+{
+	survol de la souris
+}
+
+balise:active
+{
+	au moment du clic
+}
+
+balise:focus
+{
+	selectionné
+}
+
+balise:visited
+{
+	deja visité
+}

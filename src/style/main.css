@@ -208,3 +208,198 @@ balise:visited
 {
 	deja visité
 }
+
+/*
+-----------------------------------------------------------------------------------------
+MISE EN FORME DES BOITES
+-----------------------------------------------------------------------------------------
+*/
+
+largeur
+{
+	width: 50%;
+	width: 250px;
+	min-width: 100px;
+	max-width: 500px;
+}
+
+hauteur
+{
+	height: 50%;
+	height: 250px;
+	min-height: : 100px;
+	max-height: : 500px;
+}
+
+marge intérieur
+{
+	padding: 100px;
+	/*
+	-top
+	-bottom
+	-left
+	-right
+	*/
+}
+
+marge extérieur
+{
+	margin: 100px;
+	/*
+	-top
+	-bottom
+	-left
+	-right
+	*/
+	margin: auto;
+}
+
+dépassement
+{
+	overflow: visible; /*le texte va déborder*/
+	overflow: hidden; /*le texte de trop sera caché*/
+	overflow: scroll; /*ajoute une barre de défillement*/
+	overflow: auto; /*ajoute une barre de défillement si neccessaire*/
+}
+
+mot trop long
+{
+	word-wrap: break-word;
+}
+
+/*
+-----------------------------------------------------------------------------------------
+FLEXBOX
+-----------------------------------------------------------------------------------------
+*/
+
+déclarer le flex
+{
+	display: flex;
+}
+
+direction
+{
+	flex-direction: row;
+	flex-direction: column;
+	flex-direction: row-reverse;
+	flex-direction: column-reverse;
+}
+
+retour à la ligne
+{
+	flex-wrap: nowrap;
+	flex-wrap: wrap;
+	flex-wrap: wrap-reverse;
+}
+
+alignement axe principal
+{
+	justify-content: flex-start;
+	justify-content: flex-end;
+	justify-content: center;
+	justify-content: space-between;
+	justify-content: space-around;
+}
+
+alignement axe secondaire
+{
+	align-items: stretch;
+	align-items: flex-start;
+	align-items: flex-end;
+	align-items: center;
+	align-items: baseline;
+}
+
+.aligné-element:nth-child(2)
+{
+	align-self: "align-items";
+}
+
+repartition sur plusieurs ligne
+{
+	align-content: flex-start;
+	align-content: flex-end;
+	align-content: center;
+	align-content: space-between;
+	align-content: space-around;
+	align-content: stretch;
+}
+
+.ordre:nth-child(2)
+{
+	order: 3;
+}
+
+/*----*/
+
+.grosseur-element:nth-child(1)
+{
+	flex: 2;
+}
+
+.grosseur-element:nth-child(2)
+{
+	flex: 1;
+}
+
+/*----*/
+
+li
+{
+	list-style-type: none;
+}
+
+/*
+-----------------------------------------------------------------------------------------
+AUTRE MISE EN PAGE
+-----------------------------------------------------------------------------------------
+*/
+
+changer de type
+{
+	display: block;
+	display: inline;
+	display: inline-block;
+}
+
+invisible
+{
+	display: none;
+}
+
+alignement vertical
+{
+	vertical-align: baseline;
+	vertical-align: top;
+	vertical-align: middle;
+	vertical-align: bottom;
+}
+
+position absolu
+{
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	left: 50px;
+	bottom: 50px;
+	z-index: 1; /*ordre d'affichage, 1 au fond*/
+}
+
+position fixe
+{
+	position: fixed;
+	top: 50px;
+	right: 50px;
+	left: 50px;
+	bottom: 50px;
+}
+
+position relatif
+{
+	position: relative;
+	top: 50px;
+	right: 50px;
+	left: 50px;
+	bottom: 50px;
+}
